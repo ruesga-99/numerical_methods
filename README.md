@@ -15,9 +15,13 @@ Make sure you have the following installed:
 - Python 3.x (I'm using 3.12)
 
 This project uses the following Python libraries:
-- numpy
-- pandas
-- matpolib
+- numpy 2.0.0
+- pandas 2.2.2
+- matpolib 3.9.0
+
+```
+pip install numpy==2.0.0 pandas==2.2.2 matplotlib==3.9.0
+```
 
 <!--
 List of Numerical Methods Implemented:
