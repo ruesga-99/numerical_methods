@@ -1,6 +1,23 @@
-# Welcome to the Numerical Methods in Python Repository!
+# Numerical Methods 
 
-In this repository, you will find Python implementations of commonly used numerical methods. These algorithms are useful for solving a wide range of mathematical problems, including linear algebra, optimization, interpolation, and differential equations.
+In this repository, you will find Python implementations of commonly used numerical methods. These algorithms are useful for solving a wide range of mathematical problems, including linear algebra, optimization, interpolation, and differential equations. This repository is an active personal project, therefore new numerical methods will be soon uploaded.
+
+## List of implemented numerical methods
+
+🧮 Root Finding:
+- Bisection Method (Polinomial Functions)
+
+🧮 Others:
+- Numeric Errors
+
+## Prerequisites and Dependencies
+Make sure you have the following installed:
+- Python 3.x (I'm using 3.12)
+
+This project uses the following Python libraries:
+- numpy
+- pandas
+- matpolib
 
 <!--
 List of Numerical Methods Implemented:
@@ -39,4 +56,3 @@ To use these numerical methods, simply clone the repository and import the desir
 Contributions:
 Contributions to this repository are welcome! If you have implemented a numerical method in Python that you would like to share, please feel free to submit a pull request. Your contributions will help make this repository a valuable resource for the community
 -->
-
