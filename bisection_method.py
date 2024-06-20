@@ -1,9 +1,4 @@
-from math import log, ceil
-
-def iterations_number (a, b, e):
-    n = ceil((log(b-a) - log(e)) / log(2))
-    return n
-
+from math import ceil
 
 def calculate_middle_point (a, b):
     return (a + b) / 2
@@ -17,12 +12,14 @@ def evaluate_function (f, x):
 
     return eval
 
-def bisection_method (n, a, b, f, epsilon):
+def bisection_method (a, b, f, epsilon):
     c = calculate_middle_point(a, b)
+    fc = evaluate_function(f, c)
+    i = 0
 
     print("\n i |     a     |     b     |     c     |     f(a)    |     f(b)    |     f(c)    ")
 
-    for i in range(n):
+    while abs(fc) >= epsilon:
         fa = evaluate_function(f, a)
         fb = evaluate_function(f, b)
         fc = evaluate_function(f, c)
@@ -37,11 +34,11 @@ def bisection_method (n, a, b, f, epsilon):
             # The solution exists within c and b
             a = c
             c = calculate_middle_point(a, b)
-        elif abs(fc) < epsilon:
-            break
         else:
             print("The solution does not exist within the given interval")
             break
+
+        i += 1
 
     print("\nThe solution is aproximately = {:9.6f}".format(c))
 
@@ -58,8 +55,6 @@ def main ():
     a = float(input("Input a: "))
     b = float(input("Input b: "))
 
-    n = iterations_number(a, b, epsilon)
-
-    bisection_method(n, a, b, f, epsilon)
+    bisection_method(a, b, f, epsilon)
 
 main()
