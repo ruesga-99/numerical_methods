@@ -4,11 +4,20 @@ In this repository, you will find Python implementations of commonly used numeri
 
 ## List of implemented numerical methods
 
-🧮 Root Finding:
-- Bisection Method (Polinomial Functions)
+**🧮 Root Finding:**
 
-🧮 Others:
-- Numeric Errors
+<dl>
+  <dd> &nbsp&nbsp ✅ Bisection Method (Polinomial Functions)</dd>
+  <dd> &nbsp&nbsp ✅ Regula Falsi / False Position Method (Polinomial Functions)</dd>
+  <dd> &nbsp&nbsp ⏳ Fixed Point Iteration</dd>
+  <dd> &nbsp&nbsp ⏳ Newton-Rapshon</dd>
+</dl>
+
+**🧮 Others:**
+
+<dl>
+  <dd> &nbsp&nbsp ✅ Numeric Errors</dd>
+</dl>
 
 ## Prerequisites and Dependencies
 Make sure you have the following installed:
