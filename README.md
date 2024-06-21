@@ -9,14 +9,15 @@ In this repository, you will find Python implementations of commonly used numeri
 <dl>
   <dd> &nbsp&nbsp ✅ Bisection Method (Polinomial Functions)</dd>
   <dd> &nbsp&nbsp ✅ Regula Falsi / False Position Method (Polinomial Functions)</dd>
-  <dd> &nbsp&nbsp ⏳ Fixed Point Iteration</dd>
-  <dd> &nbsp&nbsp ⏳ Newton-Rapshon</dd>
+  <dd> &nbsp&nbsp 🗓️ Fixed Point Iteration</dd>
+  <dd> &nbsp&nbsp 🗓️ Newton-Rapshon</dd>
 </dl>
 
 **🧮 Others:**
 
 <dl>
   <dd> &nbsp&nbsp ✅ Numeric Errors</dd>
+  <dd> &nbsp&nbsp 🚧 Matrix Class (Squared Matrix) </dd>
 </dl>
 
 ## Prerequisites and Dependencies
@@ -31,6 +32,13 @@ This project uses the following Python libraries:
 ```
 pip install numpy==2.0.0 pandas==2.2.2 matplotlib==3.9.0
 ```
+
+## Emoji Key
+✅ (Completed): This emoji is used to mark tasks that have been finished and require no further work.
+
+📅 (Planned): This emoji is used for tasks that are planned for the future, indicating they are on the work calendar.
+
+🚧 (Under Construction): This emoji indicates tasks that have been implemented but still need further improvements or adjustments.
 
 <!--
 List of Numerical Methods Implemented:
