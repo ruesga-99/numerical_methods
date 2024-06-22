@@ -126,10 +126,45 @@ class Matrix:
         
         return result
     
+    '''
+    """ OTHER MATRIX OPERATIONS """
+    '''
+
+    def transpose (self):
+        result = Matrix(self.n)
+
+        for i in range(self.n):
+            for j in range(self.n):
+                result.matrix[j][i] = self.matrix[i][j]
+
+        return result
+
+    def is_null (self):
+        for i in range(self.n):
+            for j in range(self.n):
+                if self.matrix[i][j] != 0:
+                    return False
+        return True
+    
+    def is_identity (self):
+        for i in range(self.n):
+            for j in range(self.n):
+                if i == j and self.matrix[i][j] != 1:
+                    return False
+                if i != j and self.matrix[i][j] != 0:
+                    return False
+                
+        return True
+    
+    def is_symmetrical (self):
+        if self == self.transpose():
+            return True
+        
+        return False
 
 
 '''
-    """ BASIC OPERATIONS USE CASE """
+""" BASIC OPERATIONS USE CASE """
 '''
 
 A = Matrix(3)
