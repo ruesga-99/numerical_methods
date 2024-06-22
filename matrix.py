@@ -61,6 +61,31 @@ class Matrix:
         
         return result
     
+    def __pow__(self, pow):
+        if pow == 0:
+            # Return identity matrix
+            result = Matrix(self.n)
+            for i in range(self.n):
+                result.matriz[i][i] = 1
+            return result
+        
+        if pow == 1:
+            return self
+        
+        # n greater or equal to 2
+        result = Matrix(self.n)
+        
+        for i in range(self.n):
+            for j in range(self.n):
+                result.matrix[i][j] = self.matrix[i][j]
+
+        k = 1
+        while k < pow:
+            result = result * self
+            k += 1
+
+        return result
+    
     # Used for scalar product (matrix and matrix)
     def __truediv__ (self, other):
         if self.n != other.n:
@@ -83,6 +108,7 @@ class Matrix:
                 result.matrix[i][j] = self.matrix[i][j] * scalar
         
         return result
+    
 
 
 '''
@@ -124,4 +150,8 @@ op.print_mtx()
 
 op = A // 2
 print("Matrix A x b:")  # Matrix and scalar (scalar product)
+op.print_mtx()
+
+op = A ** 3
+print("Matrix A ^ 3:")
 op.print_mtx()
