@@ -19,9 +19,26 @@ class Matrix:
     def print_mtx(self):
         for i in self.matrix:
             print(i)
-        
+
     '''
-    """ OPERATOR OVERLOADING """
+    """ COMPARISSON OPERATORS OVERLOADING """
+    '''
+    
+    def __eq__ (self, other):
+        if self.n != other.n:
+            return False
+        else:
+            for i in range(self.n):
+                for j in range(self.n):
+                    if self.matrix[i][j] != other.matrix[i][j]:
+                        return False
+            return True
+        
+    def __ne__ (self, other):
+        return not self == other
+
+    '''
+    """ BINARY (MATHEMATICAL) OPERATORS OVERLOADING """
     '''
 
     def __add__ (self, other):
@@ -127,31 +144,34 @@ for i in range(3):
         k += 1
 
 # Print Matrix
-print("Matrix A:")
+print("\nMatrix A:")
 A.print_mtx()
-print("Matrix B:")
+print("\nMatrix B:")
 B.print_mtx()
 
 op = A + B
-print("Matrix A + B:")
+print("\nMatrix A + B:")
 op.print_mtx()
 
 op = A - B
-print("Matrix A - B:")
+print("\nMatrix A - B:")
 op.print_mtx()
 
 op = A * B
-print("Matrix A * B:")
+print("\nMatrix A * B:")
 op.print_mtx()
 
 op = A / B
-print("Matrix A x B:")  # Matrix and Matrix (scalar product)
+print("\nMatrix A x B:")  # Matrix and Matrix (scalar product)
 op.print_mtx()
 
 op = A // 2
-print("Matrix A x b:")  # Matrix and scalar (scalar product)
+print("\nMatrix A x b:")  # Matrix and scalar (scalar product)
 op.print_mtx()
 
 op = A ** 3
-print("Matrix A ^ 3:")
+print("\nMatrix A ^ 3:")
 op.print_mtx()
+
+print("\nMatrix A == B?", A == B)
+print("\nMatrix A != B?", A != B)
