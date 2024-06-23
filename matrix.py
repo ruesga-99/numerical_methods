@@ -167,6 +167,16 @@ class Matrix:
                 
         return True
     
+    def is_scalar (self):
+        if not self.is_diagonal():
+            return False
+        
+        for i in range(self.n - 1):
+            if self.matrix[i][i] != self.matrix[i+1][i+1]:
+                return False
+            
+        return True
+    
     def is_symmetrical (self):
         return self == self.transpose()
     
