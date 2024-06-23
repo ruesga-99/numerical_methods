@@ -21,6 +21,19 @@ class Matrix:
             print(i)
 
     '''
+    """ UNARY OPERATORS OVERLOADING """
+    '''
+
+    def __neg__ (self):
+        neg_matrix = Matrix(self.n)
+
+        for i in range(self.n):
+            for j in range(self.n):
+                neg_matrix.set_value(i, j, -self.matrix[i][j])
+
+        return neg_matrix
+
+    '''
     """ COMPARISSON OPERATORS OVERLOADING """
     '''
     
@@ -179,6 +192,9 @@ class Matrix:
     
     def is_symmetrical (self):
         return self == self.transpose()
+
+    def is_skew_symmetric (self):
+        return self == -self.transpose()
     
     def is_idempotent (self):
         return  self == self ** 2
