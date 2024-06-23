@@ -185,3 +185,20 @@ class Matrix:
     
     def is_involutory (self):
         return (self ** 2).is_identity()
+    
+    def is_triangular (self):
+        return self.is_upper_triangular() or self.is_lower_triangular()
+    
+    def is_upper_triangular (self):
+        for i in range(self.n):
+            for j in range(i + 1, self.n):
+                if self.matrix[i][j] != 0:
+                    return False     
+        return True
+    
+    def is_lower_triangular (self):
+        for i in range(self.n):
+            for j in range(i):
+                if self.matrix[i][j] != 0:
+                    return False
+        return True
