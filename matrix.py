@@ -138,6 +138,10 @@ class Matrix:
                 result.matrix[j][i] = self.matrix[i][j]
 
         return result
+    
+    '''
+    """ MATRIX PROPERTIES """
+    '''
 
     def is_null (self):
         for i in range(self.n):
@@ -146,21 +150,31 @@ class Matrix:
                     return False
         return True
     
-    def is_identity (self):
+    def is_diagonal (self):
         for i in range(self.n):
             for j in range(self.n):
-                if i == j and self.matrix[i][j] != 1:
-                    return False
                 if i != j and self.matrix[i][j] != 0:
                     return False
+        return True
+    
+    def is_identity (self):
+        if not self.is_diagonal():
+            return False
+
+        for i in range(self.n):
+            if self.matrix[i][i] != 1:
+                return False   
                 
         return True
     
     def is_symmetrical (self):
-        if self == self.transpose():
-            return True
-        
-        return False
+        return self == self.transpose()
+    
+    def is_idempotent (self):
+        return  self == self ** 2
+    
+    def is_involutory (self):
+        return (self ** 2).is_identity()
 
 
 '''
@@ -169,6 +183,8 @@ class Matrix:
 
 A = Matrix(3)
 B = Matrix(3)
+C = Matrix(3)
+J = Matrix(3)
 
 # Asign values
 k = 0
@@ -176,6 +192,8 @@ for i in range(3):
     for j in range(3):
         A.set_value(i, j, k)
         B.set_value(i, j, 2*k)
+        C.set_value(i, i, 1)
+        J.set_value(i, i, 2*k)
         k += 1
 
 # Print Matrix
@@ -183,6 +201,10 @@ print("\nMatrix A:")
 A.print_mtx()
 print("\nMatrix B:")
 B.print_mtx()
+print("\nMatrix J:")
+J.print_mtx()
+print("\nMatrix C:")
+C.print_mtx()
 
 op = A + B
 print("\nMatrix A + B:")
@@ -210,3 +232,11 @@ op.print_mtx()
 
 print("\nMatrix A == B?", A == B)
 print("\nMatrix A != B?", A != B)
+
+print("\nMatrix J is diagonal? ", J.is_diagonal())
+print("\nMatrix A is diagonal? ", A.is_diagonal())
+print("\nMatrix C is diagonal? ", C.is_diagonal())
+
+print("\nMatrix J is identity? ", J.is_identity())
+print("\nMatrix A is identity? ", A.is_identity())
+print("\nMatrix C is identity? ", C.is_identity())
