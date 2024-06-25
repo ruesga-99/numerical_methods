@@ -13,11 +13,24 @@ In this repository, you will find Python implementations of commonly used numeri
   <dd> &nbsp&nbsp 🗓️ Newton-Rapshon</dd>
 </dl>
 
+**🧮 Matrix and Systems of Linear Equations:**
+
+<dl>
+  <dd> &nbsp&nbsp 🚧 Matrix Class (Squared Matrix) </dd>
+  <dd> &nbsp&nbsp 🗓️ Cramer's Rule</dd>
+  <dd> &nbsp&nbsp 🗓️ Gaussian Elimination</dd>
+  <dd> &nbsp&nbsp 🗓️ Gauss-Jordan Method</dd>
+  <dd> &nbsp&nbsp 🗓️ Gauss-Seidel Method</dd>
+  <dd> &nbsp&nbsp 🗓️ Jacobi's Method</dd>
+  <!-- Gauss-Zamora -->
+  <dd> &nbsp&nbsp 🗓️ Crout's Elimination Method</dd>
+  <dd> &nbsp&nbsp 🗓️ Doolittle's method</dd>
+</dl>
+
 **🧮 Others:**
 
 <dl>
   <dd> &nbsp&nbsp ✅ Numeric Errors</dd>
-  <dd> &nbsp&nbsp 🚧 Matrix Class (Squared Matrix) </dd>
 </dl>
 
 ## Prerequisites and Dependencies
