@@ -152,6 +152,14 @@ class Matrix:
 
         return result
     
+    def calculate_identity (self):
+        result = Matrix(self.n)
+
+        for i in range(self.n):
+            result.matrix[i][i] = 1
+
+        return result
+    
     '''
     """ MATRIX PROPERTIES """
     '''
@@ -201,6 +209,13 @@ class Matrix:
     
     def is_involutory (self):
         return (self ** 2).is_identity()
+    
+    def is_orthogonal (self):
+        identity = Matrix(self.n).calculate_identity()
+        return (self * self.transpose()) == identity
+    
+    def is_normal (self):
+        return (self * self.transpose()) == (self.transpose() * self)
     
     def is_triangular (self):
         return self.is_upper_triangular() or self.is_lower_triangular()
