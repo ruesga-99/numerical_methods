@@ -151,14 +151,24 @@ class Matrix:
                 result.matrix[j][i] = self.matrix[i][j]
 
         return result
-    
-    def calculate_identity (self):
-        result = Matrix(self.n)
+
+    # The I and J indexes will be skipped from the original matrix
+    def get_submatrix(self, I, J):
+        submatrix = Matrix(self.n - 1)
+        sub_i = 0
 
         for i in range(self.n):
-            result.matrix[i][i] = 1
-
-        return result
+            if i == I:
+                continue
+            sub_j = 0
+            for j in range(self.n):
+                if j == J:
+                    continue
+                submatrix.matrix[sub_i][sub_j] = self.matrix[i][j]
+                sub_j += 1
+            sub_i += 1
+        
+        return submatrix
     
     '''
     """ MATRIX PROPERTIES """
