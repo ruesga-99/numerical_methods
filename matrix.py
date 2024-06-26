@@ -169,7 +169,7 @@ class Matrix:
         return dp
 
     # The I and J indexes will be skipped from the original matrix
-    def get_submatrix(self, I, J):
+    def get_submatrix (self, I, J):
         submatrix = Matrix(self.n - 1)
         sub_i = 0
 
@@ -185,6 +185,22 @@ class Matrix:
             sub_i += 1
         
         return submatrix
+    
+    def determinant (self):
+        if self.is_triangular() or self.is_diagonal():
+            return self.diagonal_product()
+        
+        if self.n == 1:
+            return self.matrix[0][0]
+        elif self.n == 2:
+            return self.matrix[0][0] * self.matrix[1][1] - self.matrix[0][1] * self.matrix[1][0]
+        else:
+            det = 0
+            for j in range(self.n):
+                sign = (-1) ** j
+                sub_det = self.get_submatrix(0, j).determinant()
+                det += sign * self.matrix[0][j] * sub_det
+            return det
     
     '''
     """ MATRIX PROPERTIES """
