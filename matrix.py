@@ -246,6 +246,12 @@ class Matrix:
     def is_skew_symmetric (self):
         return self == -self.transpose()
     
+    def is_regular (self):
+        return self.determinant() != 0
+    
+    def is_singular (self):
+        return not self.is_regular()
+    
     def is_idempotent (self):
         return  self == self ** 2
     
