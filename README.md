@@ -10,27 +10,36 @@ In this repository, you will find Python implementations of commonly used numeri
   <dd> &nbsp&nbsp ✅ Bisection Method (Polinomial Functions)</dd>
   <dd> &nbsp&nbsp ✅ Regula Falsi / False Position Method (Polinomial Functions)</dd>
   <dd> &nbsp&nbsp 🗓️ Fixed Point Iteration</dd>
-  <dd> &nbsp&nbsp 🗓️ Newton-Rapshon</dd>
+  <dd> &nbsp&nbsp 🗓️ Newton-Rapshon</dd></br>
+</dl>
+
+**🧮 Linear Interpolation:**
+
+<dl>
+  <dd> &nbsp&nbsp 🗓️ Lagrange's Polinomial</dd>
+  <dd> &nbsp&nbsp 🗓️ Newton's Divided Difference </dd>
+  <dd> &nbsp&nbsp 🗓️ Newton's Finite Difference </dd>
+  <dd> &nbsp&nbsp 🗓️ Least Squares</dd></br>
 </dl>
 
 **🧮 Matrix and Systems of Linear Equations:**
 
 <dl>
-  <dd> &nbsp&nbsp 🚧 Matrix Class (Squared Matrix) </dd>
+  <dd> &nbsp&nbsp ✅Matrix Class (Squared Matrix) </dd>
   <dd> &nbsp&nbsp 🗓️ Cramer's Rule</dd>
   <dd> &nbsp&nbsp 🗓️ Gaussian Elimination</dd>
   <dd> &nbsp&nbsp 🗓️ Gauss-Jordan Method</dd>
   <dd> &nbsp&nbsp 🗓️ Gauss-Seidel Method</dd>
   <dd> &nbsp&nbsp 🗓️ Jacobi's Method</dd>
-  <!-- Gauss-Zamora -->
+  <dd> &nbsp&nbsp 🗓️ Gauss-Zamora Method</dd>
   <dd> &nbsp&nbsp 🗓️ Crout's Elimination Method</dd>
-  <dd> &nbsp&nbsp 🗓️ Doolittle's method</dd>
+  <dd> &nbsp&nbsp 🗓️ Doolittle's method</dd></br>
 </dl>
 
 **🧮 Others:**
 
 <dl>
-  <dd> &nbsp&nbsp ✅ Numeric Errors</dd>
+  <dd> &nbsp&nbsp ✅ Numeric Errors</dd></br>
 </dl>
 
 ## Prerequisites and Dependencies
@@ -53,29 +62,29 @@ pip install numpy==2.0.0 pandas==2.2.2 matplotlib==3.9.0
 
 🚧 (Under Construction): This emoji indicates tasks that have been implemented but still need further improvements or adjustments.
 
+
 <!--
 List of Numerical Methods Implemented:
 Root Finding:
-
 Bisection Method
 Newton-Raphson Method
 Secant Method
-Linear Algebra:
 
+Linear Algebra:
 Gaussian Elimination
 LU Decomposition
 QR Decomposition
-Interpolation:
 
+Interpolation:
 Lagrange Interpolation
 Newton's Divided Differences
-Numerical Integration:
 
+Numerical Integration:
 Trapezoidal Rule
 Simpson's Rule
 Romberg Integration
-Ordinary Differential Equations (ODEs):
 
+Ordinary Differential Equations (ODEs):
 Euler's Method
 Runge-Kutta Methods
 Adaptive Step-size Control
@@ -84,9 +93,9 @@ Partial Differential Equations (PDEs):
 Finite Difference Methods
 Finite Element Methods (coming soon)
 
-Usage:
+## Usage:
 To use these numerical methods, simply clone the repository and import the desired method into your Python environment. Each method is contained in its own module for easy integration into your projects. Detailed documentation and examples are provided within each module.
 
-Contributions:
+## Contributions:
 Contributions to this repository are welcome! If you have implemented a numerical method in Python that you would like to share, please feel free to submit a pull request. Your contributions will help make this repository a valuable resource for the community
 -->
