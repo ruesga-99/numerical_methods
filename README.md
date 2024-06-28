@@ -24,8 +24,8 @@ In this repository, you will find Python implementations of commonly used numeri
 **🧮 Root Finding:**
 
 <dl>
-  <dd> &nbsp&nbsp ✅ Bisection Method (Polinomial Functions)</dd>
-  <dd> &nbsp&nbsp ✅ Regula Falsi / False Position Method (Polinomial Functions)</dd>
+  <dd> &nbsp&nbsp ✅ Bisection Method (Polynomial Functions)</dd>
+  <dd> &nbsp&nbsp ✅ Regula Falsi / False Position Method (Polynomial Functions)</dd>
   <dd> &nbsp&nbsp 🗓️ Fixed Point Iteration</dd>
   <dd> &nbsp&nbsp 🗓️ Newton-Rapshon</dd></br>
 </dl>
@@ -33,7 +33,7 @@ In this repository, you will find Python implementations of commonly used numeri
 **🧮 Linear Interpolation:**
 
 <dl>
-  <dd> &nbsp&nbsp 🗓️ Lagrange's Polinomial</dd>
+  <dd> &nbsp&nbsp 🗓️ Lagrange's Polynomial</dd>
   <dd> &nbsp&nbsp 🗓️ Newton's Divided Difference </dd>
   <dd> &nbsp&nbsp 🗓️ Newton's Finite Difference </dd>
   <dd> &nbsp&nbsp 🗓️ Least Squares</dd></br>
