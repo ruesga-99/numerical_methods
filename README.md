@@ -33,7 +33,7 @@ In this repository, you will find Python implementations of commonly used numeri
 **🧮 Linear Interpolation:**
 
 <dl>
-  <dd> &nbsp&nbsp 🗓️ Lagrange's Polynomial</dd>
+  <dd> &nbsp&nbsp ✅ Lagrange's Polynomial</dd>
   <dd> &nbsp&nbsp 🗓️ Newton's Divided Difference </dd>
   <dd> &nbsp&nbsp 🗓️ Newton's Finite Difference </dd>
   <dd> &nbsp&nbsp 🗓️ Least Squares</dd></br>
@@ -57,6 +57,7 @@ In this repository, you will find Python implementations of commonly used numeri
 
 <dl>
   <dd> &nbsp&nbsp ✅ Numeric Errors</dd>
+  <dd> &nbsp&nbsp 🗓️ Tabular Form of the Function</dd>
 </dl>
 
 ## Prerequisites and Dependencies
