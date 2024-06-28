@@ -10,10 +10,6 @@ def tabular_function (n, h):
 
     return tab_func
 
-def print_function (tab_func):
-    for x, y in tab_func.items():
-        print(f"f({x}) = {y}")
-
 def lagrange_polynomial (tab_func, x):
     x_values = list(tab_func.keys())
     y_values = list(tab_func.values())
@@ -37,7 +33,6 @@ n = int(input("Input the number of points: "))
 h = float(input("Input the step size h: "))
 
 tab_func = tabular_function(n, h)
-print_function(tab_func)
 
 x = float(input("\nInput the starting value of x: "))
 
