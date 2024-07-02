@@ -26,8 +26,8 @@ In this repository, you will find Python implementations of commonly used numeri
 <dl>
   <dd> &nbsp&nbsp ✅ Bisection Method (Polynomial Functions)</dd>
   <dd> &nbsp&nbsp ✅ Regula Falsi / False Position Method (Polynomial Functions)</dd>
-  <dd> &nbsp&nbsp 🗓️ Fixed Point Iteration</dd>
-  <dd> &nbsp&nbsp 🗓️ Newton-Rapshon</dd></br>
+  <dd> &nbsp&nbsp 📆 Fixed Point Iteration</dd>
+  <dd> &nbsp&nbsp 📆 Newton-Rapshon</dd></br>
 </dl>
 
 **🧮 Linear Interpolation:**
@@ -35,29 +35,39 @@ In this repository, you will find Python implementations of commonly used numeri
 <dl>
   <dd> &nbsp&nbsp ✅ Lagrange's Polynomial</dd>
   <dd> &nbsp&nbsp 🚧 Newton's Divided Difference </dd>
-  <dd> &nbsp&nbsp 🗓️ Newton's Finite Difference </dd>
-  <dd> &nbsp&nbsp 🗓️ Least Squares</dd></br>
+  <dd> &nbsp&nbsp 📆 Newton's Finite Difference </dd>
+  <dd> &nbsp&nbsp 📆 Least Squares</dd></br>
 </dl>
 
 **🧮 Matrix and Systems of Linear Equations:**
 
 <dl>
   <dd> &nbsp&nbsp ✅Matrix Class (Squared Matrix) </dd>
-  <dd> &nbsp&nbsp 🗓️ Cramer's Rule</dd>
-  <dd> &nbsp&nbsp 🗓️ Gaussian Elimination</dd>
-  <dd> &nbsp&nbsp 🗓️ Gauss-Jordan Method</dd>
-  <dd> &nbsp&nbsp 🗓️ Gauss-Seidel Method</dd>
-  <dd> &nbsp&nbsp 🗓️ Jacobi's Method</dd>
-  <dd> &nbsp&nbsp 🗓️ Gauss-Zamora Method</dd>
-  <dd> &nbsp&nbsp 🗓️ Crout's Method (QR Descomposition) </dd>
-  <dd> &nbsp&nbsp 🗓️ Doolittle's Method (LU Descomposition) </dd></br>
+  <dd> &nbsp&nbsp 📆 Cramer's Rule</dd>
+  <dd> &nbsp&nbsp 📆 Gaussian Elimination</dd>
+  <dd> &nbsp&nbsp 📆 Gauss-Jordan Method</dd>
+  <dd> &nbsp&nbsp 📆 Gauss-Seidel Method</dd>
+  <dd> &nbsp&nbsp 📆 Jacobi's Method</dd>
+  <dd> &nbsp&nbsp 📆 Gauss-Zamora Method</dd>
+  <dd> &nbsp&nbsp 📆 Crout's Method (QR Descomposition) </dd>
+  <dd> &nbsp&nbsp 📆 Doolittle's Method (LU Descomposition) </dd></br>
 </dl>
+
+**💡 Numerical Integration: (Planning Ongoing)**
+
+**💡 Numerical Diferentiation: (Planning Ongoing)**
+
+**💡 Ordinary Diferential Equations: (Planning Ongoing)**
+
+**💡 Partial Diferential Equations: (Planning Ongoing)**
+
+</br>
 
 **🧮 Others:**
 
 <dl>
   <dd> &nbsp&nbsp ✅ Numeric Errors</dd>
-  <dd> &nbsp&nbsp 🗓️ Tabular Form of the Function</dd>
+  <dd> &nbsp&nbsp 📆 Tabular Form of the Function</dd>
 </dl>
 
 ## Prerequisites and Dependencies
@@ -76,7 +86,7 @@ pip install numpy==2.0.0 pandas==2.2.2 matplotlib==3.9.0
 ## Emoji Key
 ✅ (Completed): This emoji is used to mark tasks that have been finished and require no further work.
 
-📅 (Planned): This emoji is used for tasks that are planned for the future, indicating they are on the work calendar.
+📆 (Planned): This emoji is used for tasks that are planned for the future, indicating they are on the work calendar.
 
 🚧 (Under Construction): This emoji indicates tasks that have been implemented but still need further improvements or adjustments.
 
