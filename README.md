@@ -6,15 +6,15 @@ In this repository, you will find Python implementations of commonly used numeri
  _____________________
 |  _________________  |
 | | By: ruesga-99   | |
-| |_________________| |                       _   _                           _           _ 
-|  ___ ___ ___   ___  |                      | \ | |_   _ _ __ ___   ___ _ __(_) ___ __ _| |
-| | 7 | 8 | 9 | | + | |                      |  \| | | | | '_ ` _ \ / _ \ '__| |/ __/ _` | |                   
-| |___|___|___| |___| |                      | |\  | |_| | | | | | |  __/ |  | | (_| (_| | |                             
-| | 4 | 5 | 6 | | - | |                      |_| \_|\__,_|_| |_| |_|\___|_|  |_|\___\__,_|_|                             
-| |___|___|___| |___| |                      |  \/  | ___| |_| |__   ___   __| |                             
-| | 1 | 2 | 3 | | x | |                      | |\/| |/ _ \ __| '_ \ / _ \ / _` / __|                           
-| |___|___|___| |___| |                      | |  | |  __/ |_| | | | (_) | (_| \__ \                          
-| | . | 0 | = | | / | |                      |_|  |_|\___|\__|_| |_|\___/ \__,_|___/
+| |_________________| |               _   _                           _           _ 
+|  ___ ___ ___   ___  |              | \ | |_   _ _ __ ___   ___ _ __(_) ___ __ _| |
+| | 7 | 8 | 9 | | + | |              |  \| | | | | '_ ` _ \ / _ \ '__| |/ __/ _` | |                   
+| |___|___|___| |___| |              | |\  | |_| | | | | | |  __/ |  | | (_| (_| | |                             
+| | 4 | 5 | 6 | | - | |              |_| \_|\__,_|_| |_| |_|\___|_|  |_|\___\__,_|_|                             
+| |___|___|___| |___| |              |  \/  | ___| |_| |__   ___   __| |                             
+| | 1 | 2 | 3 | | x | |              | |\/| |/ _ \ __| '_ \ / _ \ / _` / __|                           
+| |___|___|___| |___| |              | |  | |  __/ |_| | | | (_) | (_| \__ \                          
+| | . | 0 | = | | / | |              |_|  |_|\___|\__|_| |_|\___/ \__,_|___/
 | |___|___|___| |___| |                           
 |_____________________|
 ```
@@ -33,16 +33,16 @@ In this repository, you will find Python implementations of commonly used numeri
 **🧮 Linear Interpolation:**
 
 <dl>
-  <dd> &nbsp&nbsp ✅ Lagrange's Polynomial</dd>
-  <dd> &nbsp&nbsp 🚧 Newton's Divided Difference </dd>
-  <dd> &nbsp&nbsp 📆 Newton's Finite Difference </dd>
+  <dd> &nbsp&nbsp 🚧 Lagrange's Polynomial</dd>
+  <dd> &nbsp&nbsp ✅ Newton's Divided Differences </dd>
+  <dd> &nbsp&nbsp 📆 Newton's Finite Differences </dd>
   <dd> &nbsp&nbsp 📆 Least Squares</dd></br>
 </dl>
 
 **🧮 Matrix and Systems of Linear Equations:**
 
 <dl>
-  <dd> &nbsp&nbsp ✅Matrix Class (Squared Matrix) </dd>
+  <dd> &nbsp&nbsp ✅ Matrix Class (Squared Matrix) </dd>
   <dd> &nbsp&nbsp 📆 Cramer's Rule</dd>
   <dd> &nbsp&nbsp 📆 Gaussian Elimination</dd>
   <dd> &nbsp&nbsp 📆 Gauss-Jordan Method</dd>
