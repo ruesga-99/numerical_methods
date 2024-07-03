@@ -8,28 +8,45 @@ def tabular_function (n):
         x = float(x)
         y = float(y)
         tab_func[x] = y
-
+    
     return tab_func
 
-def divided_difference (tab_func, n):
+def divided_differences (tab_func):
     x_val = list(tab_func.keys())
     y_val = list(tab_func.values())
+    n = len(x_val)
 
-    dev_1 = []
-    dev_2 = []
-    dev_3 = []
-            
-    for i in range(n - 1):
-        dev_1.append((y_val[i + 1] - y_val[i]) / (x_val[i + 1] - x_val[i]))
+    table = [[0 for _ in range(n)] for _ in range(n)]
+    
+    for i in range(n):
+        table[i][0] = y_val[i]
+    
+    for j in range(1, n):
+        for i in range(n - j):
+            table[i][j] = (table[i + 1][j - 1] - table[i][j - 1]) / (x_val[i + j] - x_val[i])
+    
+    return table, x_val
 
-    for i in range(n - 2):
-        dev_2.append((dev_1[i + 1] - dev_1[i]) / (x_val[i + 2] - x_val[i]))
+def interpolate(table, x_val, x):
+    n = len(x_val)
+    result = table[0][0]
+    product_terms = 1.0
+    
+    for i in range(1, n):
+        product_terms *= (x - x_val[i - 1])
+        result += table[0][i] * product_terms
+    
+    return result
 
-    for i in range(n - 3):
-        dev_3.append((dev_2[i + 1] - dev_2[i]) / (x_val[i + 3] - x_val[i]))
+def main():
+    n = int(input("Input the number of points: "))
+    
+    tab_func = tabular_function(n)
+    table, x_val = divided_differences(tab_func)
+    
+    x = float(input("Input the x value to interpolate: "))
+    polynomial_aprox = interpolate(table, x_val, x)
+    
+    print("f(x) at x ≈ {} is {}".format(x, polynomial_aprox))
 
-n = int(input("Input the number of points: "))
-
-tab_func = tabular_function(n)
-
-divided_difference(tab_func, n)
+main()
