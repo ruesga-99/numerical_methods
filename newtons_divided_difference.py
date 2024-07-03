@@ -38,15 +38,35 @@ def interpolate(table, x_val, x):
     
     return result
 
+def print_table(table, x_val):
+    n = len(x_val)
+    
+    # Table header
+    headers = ["i", "x", "f(x)", "|"]
+    headers += ["y^{}".format(i+1) for i in range(n-1)]
+    print("\t".join(headers))
+
+    # Table rows
+    for i in range(n):
+        row = [f"{i}", f"{x_val[i]:.3f}", f"{table[i][0]:.3f}", "|"]
+        for j in range(1, n):
+            if i < n - j:
+                row.append(f"{table[i][j]:.3f}")
+            else:
+                row.append("")
+        print("\t".join(row))
+
 def main():
     n = int(input("Input the number of points: "))
     
     tab_func = tabular_function(n)
     table, x_val = divided_differences(tab_func)
+
+    print_table(table, x_val)
     
-    x = float(input("Input the x value to interpolate: "))
+    x = float(input("\nInput the x value to interpolate: "))
     polynomial_aprox = interpolate(table, x_val, x)
     
-    print("f(x) at x ≈ {} is {}".format(x, polynomial_aprox))
+    print("\nf(x) ≈ {} at x = {} \n".format(polynomial_aprox, x))
 
 main()
