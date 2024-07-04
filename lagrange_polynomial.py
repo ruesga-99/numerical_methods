@@ -24,6 +24,7 @@ def lagrange_polynomial (tab_func, x):
                 if m != j:
                     lagrangian *= (x - x_values[m]) / (x_values[j] - x_values[m])
             result += lagrangian
+            print(f"P{j+1}(x) = {result:.6f}")  # Print the intermediate result after each term
         return result
 
     return L
@@ -39,4 +40,4 @@ x = float(input("\nInput the starting value of x: "))
 L = lagrange_polynomial(tab_func, x)
 L_eval = L(x)
 
-print("f({}) ≈ {:.6f}".format(x, L_eval))
+print("\nf({}) ≈ {:.6f}".format(x, L_eval))
