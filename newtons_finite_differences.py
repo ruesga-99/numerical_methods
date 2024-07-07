@@ -26,13 +26,28 @@ def forward_finite_differences (tab_func, x):
 
     for j in range(1, n):
         for i in range(n - j):
-            table[i][j] = (table[i + 1][j - 1] - table[i][j - 1])
+            table[i][j] = table[i + 1][j - 1] - table[i][j - 1]
 
     return table, x_val
 
-def backward_finite_differences ():
+def backward_finite_differences (tab_func, x):
+    x_val = list(tab_func.keys())
+    y_val = list(tab_func.values())
+    n = len(x_val)
 
-    return
+    h = y_val[1] - y_val[0]
+    s = (x - x_val[0]) / h
+
+    table = [[0 for _ in range(n)] for _ in range(n)]
+
+    for i in range(n):
+        table[i][0] = y_val[i]
+
+    for j in range(1, n):
+        for i in range(n - j):
+            table[i][j] = (table[i + 1][j - 1] - table[i][j - 1])
+
+    return table, x_val
 
 def print_table(table, x_val):
     n = len(x_val)
@@ -64,7 +79,10 @@ def main ():
     print("\n\033[1mForward Finite Differences\033[0m \n")
     print_table(table, x_val)
 
+    table, x_val = backward_finite_differences(tab_func, x)
+
     print("\n\033[1mBackward Finite Differences\033[0m \n")
+    print_table(table, x_val)
     
     return
 
