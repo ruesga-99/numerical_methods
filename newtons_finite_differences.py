@@ -28,7 +28,7 @@ def forward_finite_differences (tab_func, x):
         for i in range(n - j):
             table[i][j] = table[i + 1][j - 1] - table[i][j - 1]
 
-    return table, x_val
+    return table, x_val, True
 
 def backward_finite_differences (tab_func, x):
     x_val = list(tab_func.keys())
@@ -47,14 +47,20 @@ def backward_finite_differences (tab_func, x):
         for i in range(n - j):
             table[i][j] = (table[i + 1][j - 1] - table[i][j - 1])
 
-    return table, x_val
+    return table, x_val, False
 
-def print_table(table, x_val):
+def print_table(table, x_val, type):
     n = len(x_val)
     
     # Table header
     headers = ["i", "xi", "f(xi)", "|"]
-    headers += ["Δ^{}f(x)".format(i+1) for i in range(n-1)]
+
+    # Type: True = Forward --- False = Backward
+    if type == True:
+        headers += ["Δ^{}f(x)".format(i+1) for i in range(n-1)]
+    else:
+        headers += ["∇^{}f(x)".format(i+1) for i in range(n-1)]
+    
     print("\t".join(headers))
 
     # Table rows
@@ -74,15 +80,15 @@ def main ():
 
     x = float(input("\nInput the x value to interpolate: "))
 
-    table, x_val = forward_finite_differences(tab_func, x)
+    table, x_val, type = forward_finite_differences(tab_func, x)
 
     print("\n\033[1mForward Finite Differences\033[0m \n")
-    print_table(table, x_val)
+    print_table(table, x_val, type)
 
-    table, x_val = backward_finite_differences(tab_func, x)
+    table, x_val, type = backward_finite_differences(tab_func, x)
 
     print("\n\033[1mBackward Finite Differences\033[0m \n")
-    print_table(table, x_val)
+    print_table(table, x_val, type)
     
     return
 
