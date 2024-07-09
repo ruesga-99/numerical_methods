@@ -18,15 +18,8 @@ def least_squares (tab_func, x):
     y_val = list(tab_func.values())
     n = len(x_val)
 
-    avg_x = 0
-    avg_y = 0
-
-    for i in range (n):
-        avg_x += x_val[i]
-        avg_y += y_val[i]
-    else:
-        avg_x /= n
-        avg_y /= n
+    avg_x = sum(x_val) / n
+    avg_y = sum(y_val) / n
 
     sum_xy_diff = 0
     sum_xx_diff = 0
