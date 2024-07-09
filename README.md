@@ -36,7 +36,7 @@ In this repository, you will find Python implementations of commonly used numeri
   <dd> &nbsp&nbsp ✅ Lagrange's Polynomial</dd>
   <dd> &nbsp&nbsp ✅ Newton's Divided Differences </dd>
   <dd> &nbsp&nbsp ✅ Newton's Finite Differences </dd>
-  <dd> &nbsp&nbsp 📆 Least Squares</dd></br>
+  <dd> &nbsp&nbsp 🚧 Least Squares</dd></br>
 </dl>
 
 **🧮 Matrix and Systems of Linear Equations:**
