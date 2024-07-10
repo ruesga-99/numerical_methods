@@ -30,13 +30,18 @@ In this repository, you will find Python implementations of commonly used numeri
   <dd> &nbsp&nbsp 📆 Newton-Rapshon</dd></br>
 </dl>
 
-**🧮 Linear Interpolation:**
+**🧮 Linear Interpolation and Curve Fitting:**
 
 <dl>
   <dd> &nbsp&nbsp ✅ Lagrange's Polynomial</dd>
   <dd> &nbsp&nbsp ✅ Newton's Divided Differences </dd>
   <dd> &nbsp&nbsp ✅ Newton's Finite Differences </dd>
   <dd> &nbsp&nbsp 🚧 Least Squares</dd></br>
+</dl>
+
+**🧮 Ordinary Differential Equations with IVP:**
+<dl>
+  <dd> &nbsp&nbsp 🚧 Euler's Method</dd></br>
 </dl>
 
 **🧮 Matrix and Systems of Linear Equations:**
@@ -55,11 +60,9 @@ In this repository, you will find Python implementations of commonly used numeri
 
 **💡 Numerical Integration: (Planning Ongoing)**
 
-**💡 Numerical Diferentiation: (Planning Ongoing)**
+**💡 Numerical Differentiation: (Planning Ongoing)**
 
-**💡 Ordinary Diferential Equations: (Planning Ongoing)**
-
-**💡 Partial Diferential Equations: (Planning Ongoing)**
+**💡 Partial Differential Equations: (Planning Ongoing)**
 
 </br>
 
