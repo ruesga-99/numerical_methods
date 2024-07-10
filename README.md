@@ -41,7 +41,8 @@ In this repository, you will find Python implementations of commonly used numeri
 
 **🧮 Ordinary Differential Equations with IVP:**
 <dl>
-  <dd> &nbsp&nbsp 🚧 Euler's Method</dd></br>
+  <dd> &nbsp&nbsp 🚧 Euler's Method</dd>
+  <dd> &nbsp&nbsp 📆 Heun's Method (Improved Euler's Method) </dd></br>
 </dl>
 
 **🧮 Matrix and Systems of Linear Equations:**
@@ -89,9 +90,9 @@ pip install numpy==2.0.0 pandas==2.2.2 matplotlib==3.9.0
 ## Emoji Key
 ✅ (Completed): This emoji is used to mark tasks that have been finished and require no further work.
 
-📆 (Planned): This emoji is used for tasks that are planned for the future, indicating they are on the work calendar.
+📆 (Planned): This emoji is used for tasks that are planned for the future, indicating they are on the work calendar. The corresponding file does not exist within the repository.
 
-🚧 (Under Construction): This emoji indicates tasks that have been implemented but still need further improvements or adjustments.
+🚧 (Under Construction): This emoji indicates tasks that have been implemented but still need further improvements or adjustments. There is already a corresponding file within the repository but hasn't been fully developed.
 
 ## Usage
 To use these numerical methods, simply clone the repository and import the desired method into your Python environment. Each method is contained in its own module for easy integration into your projects.
