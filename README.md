@@ -94,6 +94,8 @@ pip install numpy==2.0.0 pandas==2.2.2 matplotlib==3.9.0
 
 🚧 (Under Construction): This emoji indicates tasks that have been implemented but still need further improvements or adjustments. There is already a corresponding file within the repository but hasn't been fully developed.
 
+💡 (Planning Ongoing): This emoji is used for sections that haven't been completely defined on their components. 
+
 ## Usage
 To use these numerical methods, simply clone the repository and import the desired method into your Python environment. Each method is contained in its own module for easy integration into your projects.
 
