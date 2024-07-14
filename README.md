@@ -66,6 +66,8 @@ In this repository, you will find Python implementations of commonly used numeri
 
 **💡 Partial Differential Equations: (Planning Ongoing)**
 
+**💡 Nonlinear Optimization: (Planning Ongoing)**
+
 </br>
 
 **🧮 Others:**
@@ -74,6 +76,7 @@ In this repository, you will find Python implementations of commonly used numeri
   <dd> &nbsp&nbsp ✅ Numeric Errors</dd>
   <dd> &nbsp&nbsp 📆 Tabular Form of the Function</dd>
   <dd> &nbsp&nbsp ✅ Collatz Conjecture (3n+1) </dd>
+  <dd> &nbsp&nbsp 🚧 Advanced Operations </dd>
 </dl>
 
 ## Prerequisites and Dependencies
