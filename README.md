@@ -73,7 +73,7 @@ In this repository, you will find Python implementations of commonly used numeri
 <dl>
   <dd> &nbsp&nbsp ✅ Numeric Errors</dd>
   <dd> &nbsp&nbsp 📆 Tabular Form of the Function</dd>
-  <dd> &nbsp&nbsp 💡 Collatz Conjecture (3n+1) </dd>
+  <dd> &nbsp&nbsp ✅ Collatz Conjecture (3n+1) </dd>
 </dl>
 
 ## Prerequisites and Dependencies
