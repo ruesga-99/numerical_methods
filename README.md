@@ -60,7 +60,10 @@ In this repository, you will find Python implementations of commonly used numeri
   <dd> &nbsp&nbsp 📆 Doolittle's Method (LU Descomposition) </dd></br>
 </dl>
 
-**💡 Numerical Integration: (Planning Ongoing)**
+**🧮 Numerical Integration:**
+<dl>
+  <dd> &nbsp&nbsp 🚧 Closed Newton-Cotes </dd></br>
+</dl>
 
 **💡 Numerical Differentiation: (Planning Ongoing)**
 
