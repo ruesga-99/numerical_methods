@@ -62,7 +62,8 @@ In this repository, you will find Python implementations of commonly used numeri
 
 **🧮 Numerical Integration:**
 <dl>
-  <dd> &nbsp&nbsp 🚧 Closed Newton-Cotes </dd></br>
+  <dd> &nbsp&nbsp 🚧 Closed Newton-Cotes </dd>
+  <dd> &nbsp&nbsp 📆 Open Newton-Cote </dd></br>
 </dl>
 
 **💡 Numerical Differentiation: (Planning Ongoing)**
