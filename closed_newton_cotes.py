@@ -31,13 +31,32 @@ def trapezium_method (tab_func, h):
     integral *= h
     return integral
 
+def simpson_1_3 (tab_func, h):
+    x_values = sorted(tab_func.keys())
+
+    n = len(x_values)
+    integral = tab_func[x_values[0]] + tab_func[x_values[-1]]
+    
+    for i in range(1, n - 1):
+        if i % 2 == 0:
+            integral += 2 * tab_func[x_values[i]]
+        else:
+            integral += 4 * tab_func[x_values[i]]
+    
+    integral *= h / 3
+    return integral 
+
 def main ():
     n = int(input("Enter the number of known points: "))
     
     tab_func = tabular_function(n)
     h = calculate_step(n, tab_func)
-    result = trapezium_method(tab_func, h)
 
-    print("\nThe approximate integral using the trapezium method is: {:.5f} \n".format(result))
+    if n == 1:
+        result = trapezium_method(tab_func, h)
+    elif n == 2:
+        result = simpson_1_3(tab_func, h)
+
+    print("\nThe approximate integral is: {:.5f} \n".format(result))
 
 main()
