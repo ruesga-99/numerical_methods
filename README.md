@@ -42,7 +42,7 @@ In this repository, you will find Python implementations of commonly used numeri
 **🧮 Ordinary Differential Equations with IVP:**
 <dl>
   <dd> &nbsp&nbsp ✅ Euler's Method</dd>
-  <dd> &nbsp&nbsp 🚧 Heun's Method (Improved Euler's Method) </dd>
+  <dd> &nbsp&nbsp ✅ Heun's Method (Improved Euler's Method) </dd>
   <dd> &nbsp&nbsp 🚧 Runge-Kutta Method (RK4) </dd></br>
 </dl>
 
