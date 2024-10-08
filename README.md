@@ -50,6 +50,7 @@ In this repository, you will find Python implementations of commonly used numeri
 
 <dl>
   <dd> &nbsp&nbsp ✅ Matrix Class (Squared Matrix) </dd>
+  <dd> &nbsp&nbsp 💡 Rectangular Matrix Class </dd>
   <dd> &nbsp&nbsp 📆 Cramer's Rule</dd>
   <dd> &nbsp&nbsp 📆 Gaussian Elimination</dd>
   <dd> &nbsp&nbsp 📆 Gauss-Jordan Method</dd>
