@@ -21,6 +21,15 @@ In this repository, you will find Python implementations of commonly used numeri
 
 ## List of implemented numerical methods
 
+**🧮 Errors:**
+
+<dl>
+  <dd> &nbsp&nbsp ✅ Mean Squared Error</dd>
+  <dd> &nbsp&nbsp  Root Mean Squared Error</dd>
+  <dd> &nbsp&nbsp 📆 Mean Absolut Error</dd>
+  <dd> &nbsp&nbsp 📆 Mean Absolut Percentage Error</dd></br>
+</dl>
+
 **🧮 Root Finding:**
 
 <dl>
