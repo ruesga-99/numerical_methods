@@ -1,5 +1,7 @@
 # Numerical Methods 
 
+🚧 This repository is under a major restructuration 🚧
+
 In this repository, you will find Python implementations of commonly used numerical methods. These algorithms are useful for solving a wide range of mathematical problems, including linear algebra, optimization, interpolation, and differential equations. This repository is an active personal project, therefore new numerical methods will be soon uploaded.
 
 ```
